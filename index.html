@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda EBAC</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>
+                <img src="/assets/contato.png" alt="contato">
+                Agenda de Contatos | EBAC
+            </h1>
+        </div>
+    </header>
+    
+    
+    <div class="containerAll">
+        <div id="cadastrar" class="containerCadastro">
+            <div class="dados">
+                <input id="inputName" type="text" placeholder="Nome Completo" required>
+                <input id="inputNum" type="number" placeholder="Número" min="11" maxlength="11" required>
+                <input id="inputMail" type="email" placeholder="E-mail" required>
+                
+            </div>
+            <button onclick="cadastrar()">CADASTRAR</button>
+        </div>
+        <section>
+            <div id="dadosR" class="containerDados" >
+                <table id="corpo">
+                    <tbody>
+                        <tr>
+                            <td id="resName">
+                                <strong>Exemplo de Nome Completo</strong> 
+                            </td>
+                            <td id="resNum">
+                                00000000000 <br>
+                            </td>
+                            <td id="resMail">
+                                exemplo@exemplo.com
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <a href="https://github.com/sixyeth" target="_blank"><img src="./logo.png" alt="Minha logo"></a>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

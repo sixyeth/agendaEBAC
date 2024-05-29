@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda EBAC</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="/assets/contato.png">
+            Agenda de Contatos | EBAC
+        </h1>
+    </header>
+    
+    <div class="containerAll">
+        <div id="cadastrar" class="containerCadastro">
+            <label id="profilePhotoL" for="profilePhoto">Escolher Arquivo<br>400x400</label>
+            <input type="file" id="profilePhoto">
+            <div class="dados">
+                <input id="inputName" type="text" placeholder="Nome Completo" required>
+                <input id="inputNumber" type="number" placeholder="Número" min="11" required>
+                <input id="inputMail" type="email" placeholder="E-mail" required>
+                <button onclick="cadastrar()">CADASTRAR</button>
+            </div>
+        </div>
+        <section>
+            <div id="dadosR" class="containerDados" >
+                <table id="corpo">
+                    <thead>
+                        <tr>
+                            <th>Nome Completo</th>
+                            <th>Número</th>
+                            <th>E-mail</th>
+                            <th>Foto</th>
+                        </tr>
+                    </thead>
+                    <tbody id="agendaCorpo">
+                        <!-- Linhas de dados serão inseridas aqui -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="btnDown">
+                <button id="down" onclick="down()">BAIXAR AGENDA</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <a href="https://github.com/sixyeth" target="_blank"><img src="./logo.png" alt="Minha logo"></a>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
